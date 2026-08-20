@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:headless": "cypress run --headless --browser chrome",
+    "test:firefox": "cypress run --browser firefox",
+    "test:single": "cypress run --spec",
+    "test:watch": "cypress open --e2e"
   },
   "keywords": [],
   "author": "",
